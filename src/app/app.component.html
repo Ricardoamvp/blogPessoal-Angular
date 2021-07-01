@@ -1,13 +1,17 @@
 <!--
-<app-menu></app-menu>
 
-<app-footer></app-footer>
 
 <app-login></app-login>
 
 <app-register></app-register>
 -->
+
+<app-menu *ngIf="auth.logado()"></app-menu>
+
 <router-outlet></router-outlet>
+
+<app-footer *ngIf="auth.logado()"></app-footer>
+
 
 
 
